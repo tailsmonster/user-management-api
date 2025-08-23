@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "KSdnYKZPiQ0=",
+  "success": false,
+  "projectFilePath": "/home/tailsmonster/Prismatic/projects/jetbrains/rider/UserManagementAPI/userMan.csproj",
+  "expectedPackageFiles": [
+    "/home/tailsmonster/.nuget/packages/microsoft.aspnetcore.openapi/9.0.8/microsoft.aspnetcore.openapi.9.0.8.nupkg.sha512",
+    "/home/tailsmonster/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512",
+    "/home/tailsmonster/.nuget/packages/microsoft.netcore.app.ref/9.0.8/microsoft.netcore.app.ref.9.0.8.nupkg.sha512",
+    "/home/tailsmonster/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.8/microsoft.aspnetcore.app.ref.9.0.8.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.NETCore.App.Host.arch-x64. No packages exist with this id in source(s): nuget.org",
+      "projectPath": "/home/tailsmonster/Prismatic/projects/jetbrains/rider/UserManagementAPI/userMan.csproj",
+      "filePath": "/home/tailsmonster/Prismatic/projects/jetbrains/rider/UserManagementAPI/userMan.csproj",
+      "libraryId": "Microsoft.NETCore.App.Host.arch-x64",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
+}
