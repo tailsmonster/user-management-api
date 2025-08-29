@@ -1,20 +1,24 @@
 @userMan_HostAddress = http://localhost:5030
+@token = my-secret-token   
 
 ### Get all users
-GET http://localhost:5030/api/user
+GET {{userMan_HostAddress}}/api/user
 Accept: application/json
+Authorization: {{token}}
 
 ###
 
 ### Get user by ID
-GET http://localhost:5030/api/user/1
+GET {{userMan_HostAddress}}/api/user/1
 Accept: application/json
+Authorization: {{token}}
 
 ###
 
 ### Create new user
-POST http://localhost:5030/api/user
+POST {{userMan_HostAddress}}/api/user
 Content-Type: application/json
+Authorization: {{token}}
 
 {
   "firstName": "Alice",
@@ -26,8 +30,9 @@ Content-Type: application/json
 ###
 
 ### Update user
-PUT http://localhost:5030/api/user/1
+PUT {{userMan_HostAddress}}/api/user/1
 Content-Type: application/json
+Authorization: {{token}}
 
 {
   "firstName": "Alice",
@@ -39,7 +44,5 @@ Content-Type: application/json
 ###
 
 ### Delete user
-DELETE http://localhost:5030/api/user/1
-
-###
-
+DELETE {{userMan_HostAddress}}/api/user/1
+Authorization: {{token}}
