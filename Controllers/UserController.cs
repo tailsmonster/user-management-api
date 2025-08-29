@@ -16,15 +16,34 @@ public class UserController : ControllerBase
     
     // GET api/users/{id}
     [HttpGet("{id}")]
+    public ActionResult<User> GetUser(int id)
     {
         var user = _users.FirstOrDefault(u => u.Id == id);
         return user == null ? NotFound() : Ok(user);
     }
     
-    // POST
-    [HttpPost]
+    // POST api/users
+    [HttpPost] 
+    public ActionResult<User> CreateUser(User user)
     {
         user.Id = _users.Count > 0 ? _users.Max(u => u.Id) + 1 : 1;
-        
+        _users.Add(user);
+        return CreatedAtAction(nameof(GetUser), new { id = user.Id }, user);
     }
+    
+    // PUT api/users/{id}
+    [HttpPut("{id}")]
+    public ActionResult<User> UpdateUser(int id, User updatedUser)
+    {
+        var user = _users.FirstOrDefault(u => u.Id == id);
+        if (user == null) return NotFound();
+        user.FirstName = updatedUser.FirstName;
+        user.LastName = updatedUser.LastName;
+        user.Email = updatedUser.Email;
+        user.Department = updatedUser.Department;
+        return Ok(user);
+    }
+    
+    // DELETE api/users/{id}
+    
 }
