@@ -11,7 +11,7 @@ public class UserController : ControllerBase
     private static List<User> _users = new List<User>();
     
     // GET api/users
-    [HttpGet("{id}")]
+    [HttpGet]
     public ActionResult<IEnumerable<User>> GetUsers() => Ok(_users);
     
     // GET api/users/{id}
@@ -45,5 +45,12 @@ public class UserController : ControllerBase
     }
     
     // DELETE api/users/{id}
-    
+    [HttpDelete("{id}")]
+    public ActionResult DeleteUser(int id)
+    {
+        var user = _users.FirstOrDefault(u => u.Id == id);
+        if (user == null) return NotFound();
+        _users.Remove(user);
+        return NoContent();
+    }
 }
