@@ -1,12 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "HddOr66teAg=",
+  "dgSpecHash": "fsF/TOHevAk=",
   "success": true,
   "projectFilePath": "/home/tailsmonster/Prismatic/projects/jetbrains/rider/UserManagementAPI/userMan.csproj",
   "expectedPackageFiles": [
     "/home/tailsmonster/.nuget/packages/microsoft.aspnetcore.openapi/9.0.8/microsoft.aspnetcore.openapi.9.0.8.nupkg.sha512",
     "/home/tailsmonster/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512",
-    "/home/tailsmonster/.nuget/packages/microsoft.netcore.app.ref/9.0.8/microsoft.netcore.app.ref.9.0.8.nupkg.sha512",
     "/home/tailsmonster/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.8/microsoft.aspnetcore.app.ref.9.0.8.nupkg.sha512",
     "/home/tailsmonster/.nuget/packages/microsoft.netcore.app.host.linux-x64/9.0.8/microsoft.netcore.app.host.linux-x64.9.0.8.nupkg.sha512"
   ],

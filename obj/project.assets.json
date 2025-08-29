@@ -175,10 +175,6 @@
           {
             "name": "Microsoft.NETCore.App.Host.linux-x64",
             "version": "[9.0.8, 9.0.8]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[9.0.8, 9.0.8]"
           }
         ],
         "frameworkReferences": {
