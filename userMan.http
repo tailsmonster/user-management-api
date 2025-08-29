@@ -1,6 +1,45 @@
 @userMan_HostAddress = http://localhost:5030
 
-GET {{userMan_HostAddress}}/weatherforecast/
+### Get all users
+GET http://localhost:5030/api/user
 Accept: application/json
 
 ###
+
+### Get user by ID
+GET http://localhost:5030/api/user/1
+Accept: application/json
+
+###
+
+### Create new user
+POST http://localhost:5030/api/user
+Content-Type: application/json
+
+{
+  "firstName": "Alice",
+  "lastName": "Johnson",
+  "email": "alice.johnson@techhive.com",
+  "department": "HR"
+}
+
+###
+
+### Update user
+PUT http://localhost:5030/api/user/1
+Content-Type: application/json
+
+{
+  "firstName": "Alice",
+  "lastName": "Smith",
+  "email": "alice.smith@techhive.com",
+  "department": "IT"
+}
+
+###
+
+### Delete user
+DELETE http://localhost:5030/api/user/1
+
+###
+
